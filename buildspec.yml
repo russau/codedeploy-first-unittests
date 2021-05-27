@@ -6,12 +6,12 @@ phases:
       - pip3 install -r requirements.txt
   build:
     commands:
-      - nosetests --with-xunit
+      - nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-erase --cover-package=.
   post_build:
     commands:
       - echo Build completed on `date`
 
-reports: #New
-  UnitTests: # CodeBuild will create a report group called "SurefireReports".
+reports:
+  UnitTests: #
     files: #Store all of the files
       - 'nosetests.xml'
