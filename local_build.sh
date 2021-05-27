@@ -9,4 +9,6 @@ python3 -m pylint *.py
 echo
 
 echo "Unit tests"
-nosetests-3.4 --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-erase --cover-package=.
+nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-branches --cover-erase --cover-package=.
+
+cat coverage.xml
