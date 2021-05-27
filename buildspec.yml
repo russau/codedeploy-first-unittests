@@ -26,3 +26,4 @@ reports:
   Coverage: #
     files: #Store all of the files
       - 'coverage.xml'
+    file-format: COBERTURAXML
