@@ -14,7 +14,7 @@ phases:
       - pip3 install -r requirements.txt
   build:
     commands:
-      - nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-erase --cover-package=.
+      - nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-branches --cover-package=.
   post_build:
     commands:
       - echo Build completed on `date`
@@ -26,4 +26,3 @@ reports:
   NewCoverage: #
     files: #Store all of the files
       - 'coverage.xml'
-    file-format: COBERTURAXML
