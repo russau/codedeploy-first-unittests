@@ -23,3 +23,6 @@ reports:
   UnitTests: #
     files: #Store all of the files
       - 'nosetests.xml'
+  Coverage: #
+    files: #Store all of the files
+      - 'coverage.xml'
