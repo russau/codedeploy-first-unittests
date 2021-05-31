@@ -22,7 +22,7 @@ phases:
 reports:
   UnitTests: #
     files: #Store all of the files
-      - 'nosetests.xml'
+      - 'unittests.xml'
   NewCoverage: #
     files: #Store all of the files
       - 'coverage.xml'
