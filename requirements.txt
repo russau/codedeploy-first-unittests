@@ -1,5 +1,6 @@
 Flask
-nose
+pytest
+pytest-cov
 coverage
 mysql_connector_python
 pylint

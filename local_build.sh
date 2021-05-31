@@ -9,6 +9,4 @@ python3 -m pylint *.py
 echo
 
 echo "Unit tests"
-nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-branches --cover-erase --cover-package=.
-
-cat coverage.xml
+pytest test_application.py  --cov-report=xml --cov application --cov-branch

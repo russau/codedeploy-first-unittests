@@ -14,7 +14,7 @@ phases:
       - pip3 install -r requirements.txt
   build:
     commands:
-      - nosetests --with-xunit --cover-xml --cover-xml-file=coverage.xml --with-coverage --cover-branches --cover-erase --cover-package=.
+      - pytest test_application.py  --cov-report=xml --cov application --cov-branch
   post_build:
     commands:
       - echo Build completed on `date`
