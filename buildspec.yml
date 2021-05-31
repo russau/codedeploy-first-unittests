@@ -14,7 +14,7 @@ phases:
       - pip3 install -r requirements.txt
   build:
     commands:
-      - pytest test_application.py  --cov-report=xml --cov application --cov-branch
+      - pytest test_application.py --junit-xml=unittests.xml --cov-report=xml --cov application --cov-branch
   post_build:
     commands:
       - echo Build completed on `date`
